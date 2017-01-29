@@ -1,4 +1,6 @@
 body {
+
+    font-family: "PT Sans", sans-serif;
 	min-width: 1000px;
 	width: 1400px;
 	height: 100%;
@@ -8,16 +10,15 @@ body {
 }
 
 .l-column-left {
-	width: 270px;
+	width: 272px;
 	min-height: 100%;
-	float: left;
 	background: #222;
 	position: fixed;
 }
 
 .l-column-left ul {
 	list-style: none;
-	padding: 30px;
+	padding: 32px;
 }
 
 .l-column-left ul li a {
@@ -25,34 +26,143 @@ body {
 	text-decoration: none;
 	color: #fff;
 	font-size: 20px;
-	margin-bottom: 25px;
+	margin-bottom: 28px;
 }
 
 a.current {
 	font-weight: bold;
-	margin-bottom: 45px;
+	padding-bottom: 20px;
 } 
 
 
-header {
-	margin-left: 270px;
-	padding: 30px 140px 30px 130px;
+.l-content {
+	background: #fff;
+	margin-left: 272px;
+	padding-left: 30px;
+	
+}
+
+/*HEADER*/
+
+.header {
+	margin-left: -30px;
+	padding: 33px 0px 33px 130px;
+	background-color: #f3f3f3;
+	margin-bottom: 50px;
 }
 
 input {
-	padding: 25px 0px 25px 25px;
-	width: 870px;
-	font-size: 15px;
+	padding: 29px 0px 29px 29px;
+	width: 898px;
+	font-size: 16px;
 	border: 1px solid;
-	border-radius: 5px;
+	border-radius: 10px;
 	border-color: #e3e4e5;
 
 }
 
-.l-content {
-	background: #fff;
-	float: left;
-	margin-left: 270px;
-	padding-left: 30px;
-	display: inline-block;
+/*ЗАГОЛОВОК*/
+
+.last-news-rubric {
+
+	font-size: 30px;
+	font-weight: bold;
+	margin-bottom: 22px;
 }
+
+/*МЕНЮ*/
+
+.last-news-main-menu {
+
+	list-style: none;
+	padding: 0;
+	margin:0;
+}
+
+.last-news-main-menu li {
+
+	display: inline-block;
+	margin-right: 30px;
+	margin-bottom: 30px;
+}
+
+.last-news-main-menu li a {
+
+	text-decoration: none;
+	color: #000;
+	font-weight: bold;
+	font-size: 16px;
+	margin: 0;
+}
+
+/* БЛОКИ*/
+.last-news-block {
+
+	display: inline-block;
+	float: left;
+	border: 1px solid #ccc;
+	width: 290px;
+	height: 200px;
+	text-decoration: none;
+	color: black;
+	margin-right: 15px;
+	padding: 30px
+}
+
+a span {
+
+	display: block;
+}
+
+.last-news-block:last-child {
+	margin-right: 0px;
+}
+
+
+
+
+.last-news-block-first-header {
+
+	font-size: 16px;
+	font-weight: bold;
+	color: #56b08a;
+	margin-bottom: 27px;
+	display: block;
+}
+
+.last-news-block-second-header {
+
+	font-size: 17px;
+	font-weight: bold;
+	margin-bottom: 13px;
+	display: block;
+
+}
+
+.last-news-block-text {
+
+	font-size: 16px;
+	display: block;
+	margin-bottom: 38px;
+}
+
+.last-news-block-date {
+
+	font-size: 16px;
+	color: #ccc;
+}
+
+a .block1:hover .last-news-block-first-header,
+a .block2:hover .last-news-block-first-header,
+a .block3:hover .last-news-block-first-header {
+
+	color: #18CA95;
+}
+
+
+.clearfix::after {
+
+    content: "";
+    display:table;
+    clear: both;
+ }

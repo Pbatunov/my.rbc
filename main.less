@@ -1,0 +1,58 @@
+.m-inline-block{
+    display: inline-block;
+    vertical-align: top;
+}
+
+// это очень полезный миксин(набор стилей), позволяет очистить родитель, если у его дочернего элемента есть float
+.m-clearfix{
+    *zoom: 1;
+
+    &:before,
+    &:after {
+        content: " ";
+        display: table;
+    }
+
+    &:after {
+        clear: both;
+    }
+}
+
+.example{
+    font-size: 40px;
+
+    // все внутренние классы начинаются со знака & и при сборке он будет заменяться на .example
+    &__item{
+        margin-bottom: 15px;
+    }
+
+    &__link{
+        color: #000;
+
+        // вот так вот можно прописывать состояния
+        &:hover{
+            color: #00cd8e;
+        }
+
+        // может быть несколько уровней вложенности, в данном случае & заменится на .example__link
+        &__date{
+            color: #999;
+        }
+    }
+
+    &__block{
+        .m-clearfix; // попробуй закоментировать этот миксин и посмотри как сломается верстка
+        margin-bottom: 10px;
+
+        &__image{
+            float: left;
+            width: 60px;
+            height: 60px;
+            background: #ccc;
+        }
+
+        &__text{
+            margin-left: 80px;
+        }
+    }
+}
