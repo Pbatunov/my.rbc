@@ -1,138 +1,134 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-	<meta charset="UTF-8" />
-	<meta name="description" content="Сломался компьютер, пропала сеть, не приходит почта, бушует вирус, Не забывайте снимать вовремя бронь, если ваша встреча отменилась, Любые вопросы по работе в RBC, Начисение ЗП/справка о доходах 3НДФЛ, Организационно-хозяйственные вопросы, Оформите кридитную карту до 31 августа 2013 года и получите целый год обслуживания бесплатно, В структуре появляется понятие «бизнес-юнитов». Бизнес-юниты формируются по типу специализации на определенных проектах."/>
-	<meta name="keywords" content="РБК, Служба технической поддержки, Секритариат, HR-департамент, Уборка помещений, Транспортный отдел, Бухгалтерия, Административно-хозяйственный отдел, «Если нужна помощь», Кредитные карты от Citibank с бесплатным годовым обслуживанием, Новая структура управления, Мой РБК, новости, Контакты, Календарь, последние новости, сотрудники, услуги, акции, мероприятия, телефон, почта, кабинет, Заявления, Официалтная информация, заявление в отпуск, заявление об увольнении, Положение о добровольном медицинском страховании, Положение об оплате труда"/>
-	<title>My RBC</title>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Сломался компьютер, пропала сеть, не приходит почта, бушует вирус, Не забывайте снимать вовремя бронь, если ваша встреча отменилась, Любые вопросы по работе в RBC, Начисение ЗП/справка о доходах 3НДФЛ, Организационно-хозяйственные вопросы, Оформите кридитную карту до 31 августа 2013 года и получите целый год обслуживания бесплатно, В структуре появляется понятие «бизнес-юнитов». Бизнес-юниты формируются по типу специализации на определенных проектах."/>
+    <meta name="keywords" content="РБК, Служба технической поддержки, Секритариат, HR-департамент, Уборка помещений, Транспортный отдел, Бухгалтерия, Административно-хозяйственный отдел, «Если нужна помощь», Кредитные карты от Citibank с бесплатным годовым обслуживанием, Новая структура управления, Мой РБК, новости, Контакты, Календарь, последние новости, сотрудники, услуги, акции, мероприятия, телефон, почта, кабинет, Заявления, Официалтная информация, заявление в отпуск, заявление об увольнении, Положение о добровольном медицинском страховании, Положение об оплате труда"/>
+    <title>My RBC</title>
 
-	<link rel="stylesheet" href="css/reset.css">
-
-	<link rel="stylesheet" href="css/layout.css">
-
-	<link rel="stylesheet/less" type="text/css" href="css/main.less">
-	<!--<script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.7.2/less.min.js"></script>-->
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
 <body>
-	<div class="l-windows">
-		<div class="l-column-left">
-		<ul>
-			<li><a class="current" href="#" title="Мой РБК">Мой РБК</a></li>
-			<li><a href="#" title="Новости">Новости</a></li>
-			<li><a href="#" title="Документы">Документы</a></li>
-			<li><a href="#" title="Контакты">Контакты</a></li>
-			<li><a href="#" title="Календарь">Календарь</a></li>
-			<li><a href="#" title="Заявки">Заявки</a></li>
-			<li><a href="#" title="WI-FI">WI-FI</a></li>
-		</ul>
-		</div>
-		
-		<div class="l-content">
-			<div class="header">
-			<form action="/echo" method="post">
-				<label for="search">
-				<input type="search" name="search" id="search" placeholder="Поиск сотрудника">
-				</label>
-			</form>
-		</div>
+    <div class="l-window">
+        <div class="l-column-left">
+            <div class="sidebar">
+                <div class="sidebar__item sidebar__logo"><a href="#" class="sidebar__link" title="Мой РБК">Мой РБК</a></div>
+                <div class="sidebar__item"><a class="sidebar__link" href="#" title="Новости">Новости</a></div>
+                <div class="sidebar__item"><a class="sidebar__link" href="#" title="Документы">Документы</a></div>
+                <div class="sidebar__item"><a class="sidebar__link" href="#" title="Контакты">Контакты</a></div>
+                <div class="sidebar__item"><a class="sidebar__link" href="#" title="Календарь">Календарь</a></div>
+                <div class="sidebar__item"><a class="sidebar__link" href="#" title="Заявки">Заявки</a></div>
+                <div class="sidebar__item"><a class="sidebar__link" href="#" title="WI-FI">WI-FI</a></div>
+            </div>
+        </div>
 
+        <div class="l-content">
+            <div class="search-form">
+                <form action="/echo" method="post">
+                    <input class="search-form__input" type="search" name="search" id="search" placeholder="Поиск сотрудника">
+                </form>
+            </div>
 
-			<!--<div class="example">
-				<div class="example__item">
-					<a href="#" class="example__link">Ссылка 1</a>
-				</div>
-				<div class="example__item">
-					<a href="#" class="example__link">Ссылка 2</a>
-				</div>
-				<div class="example__item">
-					<a href="#" class="example__link"><span class="example__item__date">27.01 </span>Ссылка 3</a>
-				</div>
+            <div class="last-news">
+                <div class="last-news__title">Последние новости</div>
+                <div class="last-news__rubric">
+                    <a href="#" class="last-news__rubric__link">Все новости</a>
+                    <a href="#" class="last-news__rubric__link">Важно</a>
+                    <a href="#" class="last-news__rubric__link">Акции</a>
+                    <a href="#" class="last-news__rubric__link">Орг. Изменения</a>
+                    <a href="#" class="last-news__rubric__link">Мероприятия</a>
+                    <a href="#" class="last-news__rubric__link">Услуги</a>
+                </div>
+                <div class="last-news__block">
+                    <div class="last-news__item">
+                        <a href="#" class="last-news__item__link">
+                            <span class="last-news__item__inner">
+                                <span class="last-news__item__rubric">Услуги</span>
+                                <span class="last-news__item__title">Новая структура управления РБК</span>
+                                <span class="last-news__item__text">В структуре появляется понятие «бизнес-юнитов». Бизнес-юниты формируются по типу специализации на определенных проектах.</span>
+                            </span>
+                            <span class="last-news__item__date">10 октября 2017</span>
+                        </a>
+                    </div>
+                    <div class="last-news__item">
+                        <a href="#" class="last-news__item__link">
+                            <span class="last-news__item__inner">
+                                <span class="last-news__item__rubric">Акции</span>
+                                <span class="last-news__item__title">Кредитные карты от Citibank с бесплатным годовым обслуживанием</span>
+                                <span class="last-news__item__text">Оформите кридитную карту до 31 августа 2013 года и получите целый год обслуживания бесплатно.</span>
+                            </span>
+                            <span class="last-news__item__date">8 сентября 2017</span>
+                        </a>
+                    </div>
+                    <div class="last-news__item">
+                        <a href="#" class="last-news__item__link">
+                            <span class="last-news__item__inner">
+                                <span class="last-news__item__rubric">Орг.Изменения</span>
+                                <span class="last-news__item__title">Новая структура управления РБК</span>
+                                <span class="last-news__item__text">В структуре появляется понятие «бизнес-юнитов». Бизнес-юниты формируются по типу специализации на определенных проектах (а не по отношению к юридическим лицам).</span>
+                            </span>
+                            <span class="last-news__item__date">4 апреля 2017</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
 
-				<div class="example__block">
-					<div class="example__block__image"></div>
-					<div class="example__block__text">Текстик</div>
-				</div>
-				<div class="example__block">
-					<div class="example__block__image"></div>
-					<div class="example__block__text">Текстик</div>
-				</div>
-			</div>-->
-
-
-
-
-
-
-
-
-
-
-
-
-				<div class="last-news clearfix">
-					<div class="last-news-rubric">Последние новости</div>
-					<ul class="last-news-main-menu">
-						<li><a href="#">Все новости</a></li>
-						<li><a href="#">Важно</a></li>
-						<li><a href="#">Акции</a></li>
-						<li><a href="#">Орг.Изменения</a></li>
-						<li><a href="#">Мероприятия</a></li>
-						<li><a href="#">Услуги</a></li>
-					</ul>
-					<a href="#" class="last-news-block">
-						<span class="block1">
-						<span class="last-news-block-first-header">Услуги</span>
-						<span class="last-news-block-second-header">Новая структура управления РБК</span>
-						<span class="last-news-block-text">В структуре появляется понятие «бизнес-юнитов». Бизнес-юниты формируются по типу специализации на определенных проектах.</span>
-						<span class="last-news-block-date">10 октября 2017</span>
-					</span></a>
-					<a href="#" class="last-news-block"><span class="block2">
-						<span class="last-news-block-first-header">Акции</span>
-						<span class="last-news-block-second-header">Кредитные карты от Citibank с бесплатным годовым обслуживанием</span>
-						<span class="last-news-block-text">Оформите кридитную карту до 31 августа 2013 года и получите целый год обслуживания бесплатно.</span>
-						<span class="last-news-block-date">8 сентября 2017</span>
-					</span></a>
-					<a href="#" class="last-news-block"><span class="block3">
-						<span class="last-news-block-first-header">Орг.Изменения</span>
-						<span class="last-news-block-second-header">Новая структура управления РБК</span>
-						<span class="last-news-block-text">В структуре появляется понятие «бизнес-юнитов». Бизнес-юниты формируются по типу специализации на определенных проектах (а не по отношению к юридическим лицам).</span>
-						<span class="last-news-block-date">4 апреля 2017</span>
-					</span></a>
-				</span>
-			<!--<div class="documents">
-					<div class="rubric">Документы</div>
-				<div class="block block 1">
-					<h3>Заявления</h3>
-					<h2>Заявление на отпуск</h2>
-				</div>
-				<div class="block block 2">
-					<h3>Заявления</h3>
-					<h2>Заявление об увольнении</h2>
-				</div>
-				<div class="block block 3">
-					<h3>Официальная информация</h3>
-					<h2>Положение об оплате труда</h2>
-				</div>
-				<div class="block block 4">
-					<h3>Официальная информация</h3>
-					<h2>Положение о добровольном медицинском страховании</h2>
-				</div>
-			</div>
-			<div class="contacts">
-				<p>Если вы не знаете, куда звонить, то возможно вам будет полезна статья <a href="#">«Если нужна помощь»</a></p>
-				<div class="block block1">
-					<h2>Служба технической поддержки</h2>
-					<p>Сломался компьютер, пропала сеть, не приходит почта, бушует вирус</p>
-				</div>
-				<div class="block block2">
-					<h2>Секритариат</h2>
-					<p>Не забывайте снимать вовремя бронь, если ваша встреча отменилась</p>
-				</div>
-				<div class="bblock block3">
-					<h2>HR-департамент</h2>
-					<p>Любые вопросы по работе в RBC</p>
-				</div>
-			</div>-->
-		</div>
-	</div>
+            <div class="documents">
+                <div class="documents__title">Документы</div>
+                <div class="documents__block">
+                    <div class="documents__item">
+                       <a href="" class="documents__item__link">
+                         <span class="documents__item__inner">
+                            <span class="documents__item__rubric">Заявления</span>
+                            <span class="documents__item__title">Заявление на отпуск</span>
+                        </span>
+                    </a>
+                </div>
+                <div class="documents__item">
+                       <a href="" class="documents__item__link">
+                         <span class="documents__item__inner">
+                            <span class="documents__item__rubric">Заявления</span>
+                            <span class="documents__item__title">Заявление об увольнении</span>
+                        </span>
+                    </a>
+                </div>
+                <div class="documents__item">
+                       <a href="" class="documents__item__link">
+                         <span class="documents__item__inner">
+                            <span class="documents__item__rubric">Официальная информация</span>
+                            <span class="documents__item__title">Положение об оплате труда</span>
+                        </span>
+                    </a>
+                </div>
+                <div class="documents__item">
+                       <a href="" class="documents__item__link">
+                         <span class="documents__item__inner">
+                            <span class="documents__item__rubric">Официальная информация</span>
+                            <span class="documents__item__title">Положение о добровольном медицинском страховании</span>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 </body>
 </html>
+
+
+
+            <!--<div class="contacts">
+                <p>Если вы не знаете, куда звонить, то возможно вам будет полезна статья <a href="#">«Если нужна помощь»</a></p>
+                <div class="block block1">
+                    <h2>Служба технической поддержки</h2>
+                    <p>Сломался компьютер, пропала сеть, не приходит почта, бушует вирус</p>
+                </div>
+                <div class="block block2">
+                    <h2>Секритариат</h2>
+                    <p>Не забывайте снимать вовремя бронь, если ваша встреча отменилась</p>
+                </div>
+                <div class="block block3">
+                    <h2>HR-департамент</h2>
+                    <p>Любые вопросы по работе в RBC</p>
+                </div>-->
