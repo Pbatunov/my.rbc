@@ -1,3 +1,5 @@
+@hover-color: #18CA95;
+
 .m-inline-block{
     display: inline-block;
     vertical-align: top;
@@ -158,8 +160,8 @@
     }
 }
 
-.documents{
-    padding-left: 30px;
+.documents {
+    padding: 0 30px 30px;
 
     &__title {
         font-size: 42px;
@@ -167,8 +169,184 @@
         margin-bottom: 15px;
     }
 
-    &__block{
-        .m-clearfix; // !!!!
-        padding-bottom: 30px;
+    &__block {
+        position: relative;
+
+        &__scroll{
+            overflow: hidden;
+            border-right: 1px solid #E3E4E5;
+        }
+
+        &__inner {
+            .m-clearfix;
+            width: 10000%;
+        }
+    }
+
+    &__arrow { // общие стили, подходящие ко всем стрелкам
+        content: "";
+        position: absolute;
+        top: 50%; // эти две срочки задают хорошее вертикальное выравнивание по середине по высоте. Задаем выравнивание на середину от верхнего угла блока
+        margin-top: -7px; // сдвигаем блок вверх на половину его выосты 15px/2 ~ c огруглением
+        width: 15px;
+        height: 15px;
+        border: 3px solid #000;
+        border-top: 0;
+        border-left: 0;
+        cursor: pointer;
+
+        &__left{
+            left: -20px; // прибиваем влево от контейнера documents__block, при ресайзе странице они останутся на своем месте
+            transform: rotate(135deg) scale(0.73);
+        }
+
+        &__right{
+            right: -20px; // прибиваем вправо от контейнера documents__block
+            transform: rotate(-45deg) scale(0.73);
+        }
+
+        &:hover{
+            border-color: #18CA95; // при наведение у всех элементов лучше использовать один цвет, чтобы сайт был красивым
+        }
+    }
+
+    &__item {
+        float: left;
+        width: 250px;
+        border: 1px solid #E3E4E5;
+        border-left: 0;
+
+        &:first-child{
+            border-left: 1px solid #E3E4E5;
+        }
+
+        &__link {
+            display: block;
+            padding: 25px 25px 20px;
+
+            &:hover .documents__item__title {
+                color: #18CA95;
+            }
+        }
+
+        &__inner {
+            display: block;
+            height: 150px;
+            position: relative;
+            overflow: hidden;
+
+            &:after {
+                position: absolute;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                height: 15px;
+                content: ' ';
+                background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 0%, #ffffff 100%);
+                background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, #ffffff 100%);
+                background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #ffffff 100%);
+                filter: progid:dximagetransform.microsoft.gradient(startColorstr='#00ffffff', endColorstr='#ffffff', GradientType=0);
+            }
+        }
+
+        &__title {
+            display: block;
+            font-size: 24px;
+            line-height: 28px;
+            font-weight: bold;
+            color:#000;
+        }
+
+        &__rubric {
+            display: block;
+            font-size: 16px;
+            font-weight: bold;
+            line-height: 23px;
+            color: #18CA95;
+            padding-bottom: 10px;
+        }
     }
 }
+
+.contacts {
+
+    padding: 30px;
+
+    &__title {
+
+        font-size: 42px;
+        font-weight: bold;
+        margin-bottom: 15px;
+    }
+
+    &__help {
+        padding-bottom: 30px;
+        &__link {
+            color: @hover-color;
+        }
+    }
+
+    &__block {
+        position: relative;
+        font-size: 0;
+
+        &__inner {
+            .m-clearfix;
+        }
+    }
+
+    &__item {
+        display: inline-block;
+        vertical-align: top;
+        width: 33.3%;
+
+        &__link {
+            display: block;
+            padding: 25px 25px 20px;
+            border: 1px solid #E3E4E5;
+            margin-right: 15px;
+            margin-bottom: 15px;
+        }
+
+        &__title {
+             display: block;
+            font-size: 24px;
+            line-height: 28px;
+            padding-bottom: 10px;
+            font-weight: bold;
+
+        }
+
+        &__description {
+            font-size: 17px;
+            margin-bottom: 13px;
+            display: block;
+        }
+
+        &__line {
+            }
+
+        &__info {
+            display: block;
+            border-top: 1px solid #e3e4e5;
+            padding-top: 10px;
+        }
+
+
+        &__name {
+            display: block;
+            font-size: 17px;
+            margin-bottom: 10px;
+        }
+
+        &__value {
+            display: block;
+            font-size: 17px;
+            margin-bottom: 10px;
+
+        }  
+    }
+}
+
+
+
